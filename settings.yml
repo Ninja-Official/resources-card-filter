@@ -5,7 +5,7 @@ category_icons:
 category_description:
   type: bool
   default: false
-  description: "Enable the category description to be displayed in the category card filters for the docs page."
+  description: "Enable the category description to be displayed in the category card filters for the resources page."
 tag_icons:
   type: string
   default: "featured,heart|videos,times"

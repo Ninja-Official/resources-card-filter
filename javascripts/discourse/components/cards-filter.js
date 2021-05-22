@@ -14,7 +14,7 @@ export default Component.extend({
 
   @discourseComputed("router.currentRoute.queryParams")
   shouldShow(params) {
-    if (!this.siteSettings.docs_enabled) return false;
+    if (!this.siteSettings.resources_enabled) return false;
 
     if (params) {
       if (Object.keys(params).length === 0) {
@@ -33,7 +33,7 @@ export default Component.extend({
 
   @discourseComputed("categories")
   includedCategories(categories) {
-    let pluginCategories = this.siteSettings.docs_categories.split("|");
+    let pluginCategories = this.siteSettings.resources_categories.split("|");
 
     let includedCategories;
 
@@ -47,7 +47,7 @@ export default Component.extend({
 
   @discourseComputed("tags")
   includedTags(tags) {
-    let pluginTags = this.siteSettings.docs_tags.split("|");
+    let pluginTags = this.siteSettings.resources_tags.split("|");
 
     let includedTags;
 

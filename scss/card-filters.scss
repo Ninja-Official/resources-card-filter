@@ -1,4 +1,4 @@
-.docs-cards-filter {
+.resources-cards-filter {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
   grid-column-gap: 1em;
@@ -14,7 +14,7 @@
   }
 }
 
-.visible .docs-cards-filter {
+.visible .resources-cards-filter {
   max-height: 500px;
   height: auto;
   overflow: visible;
@@ -22,7 +22,7 @@
   margin: 2em auto;
 }
 
-.docs-card-box {
+.resources-card-box {
   &:visited {
     color: var(--primary);
   }
@@ -76,7 +76,7 @@
   }
 }
 
-.docs-card-box-header-badge-category-bg {
+.resources-card-box-header-badge-category-bg {
     width: 10px;
     height: 10px;
     margin-right: 0.25em;

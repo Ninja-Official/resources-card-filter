@@ -1,5 +1,5 @@
 {{#if (or includedCategories includedTags)}}
-  <div class="docs-cards-filter categories-filter tag-filter">
+  <div class="resources-cards-filter categories-filter tag-filter">
     {{#if includedCategories}}
       {{#each includedCategories as |category|}}
         {{category-wrapper category=category categoryIcons=categoryIcons updateSelectedCategory=updateSelectedCategory}}
